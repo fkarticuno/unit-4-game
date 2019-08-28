@@ -1,0 +1,40 @@
+div {   
+    background: black;
+}
+.sidebar {
+    height: 410px;
+    background: rgb(37, 36, 36);
+    color: white;
+}
+.bds {
+    border: 1px solid blue;
+}
+img {
+    height: 180px;
+    width: 180px;
+    border-radius: 200px;
+    opacity: .4;
+    position: relative;
+}
+img:hover{
+    height: 200px;
+    width: 200px;
+    opacity: 1;
+
+}
+footer, header {
+    text-align: center;
+    background: rgb(37, 36, 36);
+    color: blue;
+}
+footer {
+    padding-bottom: 4%;
+}
+#cscore, #winlose,#wins, #rebtn{
+    font-size: 25px;
+    color:  blue;
+    border-radius:200px;
+}
+.col-md-3 {
+    height: 300px;
+}

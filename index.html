@@ -1,0 +1,100 @@
+<!--
+* There will be four crystals displayed as buttons on the page.
+
+* The player will be shown a random number at the start of the game.
+
+* When the player clicks on a crystal, it will add a specific amount of points to the player's total score. 
+
+  * Your game will hide this amount until the player clicks a crystal.
+  * When they do click one, update the player's score counter.
+
+* The player wins if their total score matches the random number from the beginning of the game.
+
+* The player loses if their score goes above the random number.
+
+* The game restarts whenever the player wins or loses.
+
+  * When the game begins again, the player should see a new random number. Also, all the crystals will have four new hidden values. Of course, the user's score (and score counter) will reset to zero.
+
+* The app should show the number of games the player wins and loses. To that end, do not refresh the page as a means to restart the game.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Guess</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+
+<body>
+    <!--
+    4 crystals
+    random number
+    click to increase
+    win if exact,lose if over, restart on win/loss 
+
+<img src='./images/topaz.jpg'/>
+<img src='./images/ruby.jpg'/>
+<img src='./images/moonstone.jpg'/>
+<img src='./images/emerald.jpg'/>
+    -->
+    <header class="col-md-12"></div>
+    <h1>CRYSTAL</h1>
+        &nbsp;
+    </header> 
+
+    <div class="row">
+        
+        <div class="col-md-2 sidebar">
+            &nbsp;
+            Guess what the winning number is and click crystals until you WIN!
+        </div>
+
+        <container class="col-md-8" id="cont">
+            <div class="row">
+                <div class="col-md-3" id="img1" value="sc1">
+                        <img class="img" data-value=1 src='./images/topaz.jpg'/>
+                </div>
+                <div class="col-md-3" id="img2">
+                        <img class="img" data-value=7 src='./images/ruby.jpg'/>
+                </div>
+                <div class="col-md-3" id="img3">
+                        <img class="img" data-value=100 src='./images/moonstone.jpg'/>
+                </div>
+                <div class="col-md-3" id="img4">
+                        <img class="img" data-value=10 src='./images/emerald.jpg'/>
+                </div>
+            </div>
+            <div class="row" id="spacer">
+                <div class="col-md-6" id="spacing">&nbsp;</div>
+                <div class="col-md-6" id="spacing">&nbsp;</div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 bds" id="cscore">Current Score: 0 </div>
+                <div class="col-md-2 bds" id="wins">Wins: 0</div>
+                <div class="col-md-4 bds" id="winlose"></div>
+                <div class="col-md-2 " id="rebtncont"><button id="rebtn">REPLAY</button></div>
+            </div>
+        </container>
+    
+        <div class="col-md-2 sidebar">
+            &nbsp;
+        </div>
+    
+    </div>
+
+    <footer class="col-md-12"></div>
+        <h1>GUESS</h1>
+        &nbsp;
+    </footer>
+</body>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="./javascript/scripts.js"></script>
+</html>
